@@ -1,8 +1,9 @@
 <?php
 
+use App\Models\Permiso;
 use Illuminate\Database\Seeder;
 
-class TablPractica extends Seeder
+class PermisosTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,6 +12,6 @@ class TablPractica extends Seeder
      */
     public function run()
     {
-        //
+        factory(Permiso::class, 5)->create();
     }
 }
